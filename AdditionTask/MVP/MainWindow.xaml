@@ -1,0 +1,13 @@
+﻿<Window x:Class="MVP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="204" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="36*"/>
+            <ColumnDefinition Width="11*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="185,95,0,0" Name="button1" VerticalAlignment="Top" Width="120" Click="MyButtonClick" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="76,47,0,0" Name="textBOX" VerticalAlignment="Top" Width="338" Grid.ColumnSpan="2" />
+    </Grid>
+</Window>
