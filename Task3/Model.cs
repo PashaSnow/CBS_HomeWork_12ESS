@@ -10,10 +10,12 @@ namespace Task3
     {
         private int timer;
 
+        public int Timer { get => timer; set => timer = value; }
+
         public string TimerValue()
         {
-            timer++;
-            return  timer/60 + " min " + timer%60 + "sec";
+            Timer++;
+            return  Timer/60 + " min " + Timer%60 + "sec";
         }
     }
 }

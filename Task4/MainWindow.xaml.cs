@@ -23,6 +23,58 @@ namespace Task4
         public MainWindow()
         {
             InitializeComponent();
+            new Presenter(this); // не забуваємо створити силку на себе
+        }
+
+        private EventHandler addEV;
+        private EventHandler subEV;
+        private EventHandler mulEV;
+        private EventHandler divEV;
+
+        public event EventHandler AddEV
+        {
+            add { addEV += value; }
+            remove { addEV -= value; }
+        }
+        public event EventHandler SubEV
+        {
+            add { subEV += value; }
+            remove { subEV -= value; }
+        }
+        public event EventHandler MulEV
+        {
+            add { mulEV += value; }
+            remove { mulEV -= value; }
+        }
+        public event EventHandler DivEV
+        {
+            add { divEV += value; }
+            remove { divEV -= value; }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void addButton_Click(object sender, RoutedEventArgs e)
+        {
+            addEV.Invoke(sender, e);
+        }
+
+        private void mulButton_Click(object sender, RoutedEventArgs e)
+        {
+            mulEV.Invoke(sender, e);
+        }
+
+        private void subButton_Click(object sender, RoutedEventArgs e)
+        {
+            subEV.Invoke(sender, e);
+        }
+
+        private void div_Click(object sender, RoutedEventArgs e)
+        {
+            divEV.Invoke(sender, e);
         }
     }
 }

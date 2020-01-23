@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Task4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="182.667" Width="398.667">
     <Grid>
-        
+        <Button Content="+" Name ="addButton" HorizontalAlignment="Left" Margin="32,28,0,0" VerticalAlignment="Top" Width="30" Click="addButton_Click"/>
+        <Button Content="-" Name="subButton" HorizontalAlignment="Left" Margin="32,55,0,0" VerticalAlignment="Top" Width="30" Click="subButton_Click"/>
+        <Button Content="*" Name ="mulButton" HorizontalAlignment="Left" Margin="75,28,0,0" VerticalAlignment="Top" Width="30" Click="mulButton_Click"/>
+        <Button Content="/" Name="div" HorizontalAlignment="Left" Margin="75,55,0,0" VerticalAlignment="Top" Width="30" Click="div_Click"/>
+        <Button Content="Close" HorizontalAlignment="Left" Margin="32,86,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox Name="inputValueTB1" HorizontalAlignment="Left" Height="20" Margin="150,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="119"/>
+        <TextBox Name="inputValueTB2" HorizontalAlignment="Left" Height="20" Margin="150,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="119"/>
+        <TextBox Name="resultValueTB" HorizontalAlignment="Left" Height="20" Margin="150,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="119"/>
+
     </Grid>
 </Window>
